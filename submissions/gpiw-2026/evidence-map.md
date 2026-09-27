@@ -7,3 +7,12 @@
 | São Paulo mangroves | GhostWorks AuditLab / territorial dossier | Ecosystem-scale temporal intelligence | ~4,000 points; 2018–2024; 20 alerts; multi-source dossier | Executable aggregate fixture | No raw points; GMW zero is not absence; indices are not ground truth |
 | Baía de Todos os Santos | GhostWorks_BTS_v1 / Leitura_Territorial_BTS | Regional comparison | 33,600 embeddings; 64 dimensions; 8 territories; STT | Executable aggregate fixture | STT is contextual transformation, not automatically hydrological degradation; geometry limits |
 | Aral Sea | GhostWorks Atlas | Water as trajectory | States, transitions, outliers, clusters, analogous regions; 2018–2024 | Executable aggregate fixture | Not hydrological forecasting; raw vectors/coordinates not included |
+
+## Capability-level map
+
+| Level | Capability horizon | Corpus support | Boundary |
+|---|---|---|---|
+| Demonstrated | AlphaEarth representation, TTI/STT, trajectories, annual deltas, anomaly/hotspot discovery, multimodal corroboration, visual investigation, structured serialization | TTI and GhostWorks artifacts; five prior water demonstrations | Demonstrated mechanisms do not imply every mechanism is already integrated for every water territory |
+| Transferable | Retrieval, clustering/regime discovery, analogous-region search, temporal onset reading, agent-oriented interpretation, cross-domain environmental investigation | GhostWorks mining, Cerrado, mangrove, industrial and Aral materials | Transferable from adjacent contexts; not automatically field-validated water capability |
+| Compositional / architectural | Observation → evidence → claim/gap → Research Move → investigation state | WTI schemas, adapter, five frozen fixtures | Offline frozen composition; full live loop remains to be integrated |
+| Future validation | New water territories, raw live sources, field data, partners, live sensors and repeated operations | Not established by current corpus | Requires new experiments and independent validation |

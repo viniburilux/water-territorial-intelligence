@@ -1,8 +1,9 @@
 # WTI — GPIW 2026 Technology Narrative v0.2
 
 ## 1. Opening / One-Sentence Thesis
+Water Territorial Intelligence (WTI) is an architecture for turning territorial change into traceable water intelligence: it represents territory, detects transformation, localizes where attention should go, cross-checks independent signals, preserves evidence and gaps, and selects the next investigative action.
 
-Water Territorial Intelligence (WTI) is a territorial intelligence architecture that represents water systems as trackable computational states — built from a recurring technological pattern that has already demonstrated itself, independently, across a reservoir, a river, a mangrove coastline, a bay system, and a collapsing inland sea.
+The five frozen cases in this repository are **evidence anchors, not the boundary of the technology**. They make the composition executable offline. The broader technology heritage behind WTI includes territorial representation, temporal analysis, anomaly and hotspot discovery, regime discovery, analogous-region retrieval, multimodal corroboration, coordinate-linked investigation, structured interpretation and adaptive evidence workflows already developed across environmental and territorial experiments.
 
 ## 2. The Problem
 
@@ -23,6 +24,8 @@ Across a series of experimental projects, a working technology stack was built a
 - **A regime-discovery layer** (UMAP/HDBSCAN, archetype clustering, analogous-region retrieval) that groups territories by how they behave, not just where they are.
 - **A provenance and claim-discipline layer** (TraceFoundry) that keeps evidence, inference, and hypothesis distinct as claims are built.
 
+These capabilities exist at different evidentiary levels. The repository therefore distinguishes direct demonstrations, transferable mechanisms, compositional architecture and future validation instead of collapsing the technology to the smallest runnable fixture. See [`docs/capability-horizon.md`](capability-horizon.md) for the corpus-backed map.
+
 ## 5. How the Capability Emerged
 
 This stack was not designed top-down for a water submission. It accumulated, project by project, each one testing a different piece of the same underlying idea: a semantic transformation metric validated against independent sensors at Sobradinho; a hotspot-plus-visual-verification workflow proven on the Joanes River; a multi-source environmental dossier pipeline built for the São Paulo mangrove coast; a regional comparison infrastructure operationalized across eight territories of the Baía de Todos os Santos; a state-trajectory model applied to the Aral Sea. WTI is what appears when you step back and notice that these were never five different tools — they were five tests of one recurring pattern:
@@ -35,7 +38,41 @@ territorial representation → transformation measurement → temporal reasoning
 
 WTI names that pattern, formalizes it around water, and makes the composition explicit.
 
-## 6. The WTI Architecture
+## 6. Capability Horizon — Beyond the Five Demonstrations
+
+The five cases establish anchors across a reservoir, river, mangrove coastline, bay system and inland sea. They do not define the maximum territory, sensor combination or investigative workflow that WTI can support. They show where the architecture has already touched water; the underlying substrate shows how it can be extended.
+
+### Demonstrated capability
+
+Capabilities directly evidenced in existing artifacts include AlphaEarth semantic territorial representation; TTI/STT transformation measurement; temporal trajectories and annual deltas; water-relevant transformation at Sobradinho; SAR/NDVI corroboration; coordinate-linked historical investigation at Joanes; multi-source environmental dossiers; regional comparison; state-transition trajectories; structured serialization; and explicit evidence, claim, gap and Research Move contracts.
+
+### Transferable capability
+
+Other experiments demonstrate mechanisms whose architecture is reusable by WTI: hotspot and candidate ranking, retrieval of analogous regions, clustering and regime discovery, early-mover and onset-oriented temporal reading, multimodal contextual probing with SAR, NDVI, VIIRS and related signals, and agent-oriented interpretation of structured territorial outputs. These are transferable capabilities, not claims that every water task has already been field-validated.
+
+### Compositional / architectural capability
+
+WTI adds a water-specific composition: territorial state → transformation → trajectory/hotspot/regime → corroboration → historical investigation → provenance → claim/gap → Research Move → state update. The offline adapter and five fixtures demonstrate this composition from frozen observations. The complete live loop for arbitrary new water territories remains an integration target.
+
+### Future validation
+
+New water territories, raw evidence sources, field observations, operational partners, live sensors and repeated prioritization benchmarks are the next validation layer. They extend and test an existing architecture; they are not evidence that those future capabilities already operate today.
+
+```text
+EXISTING TERRITORIAL CAPABILITIES
+                ↓
+WTI COMPOSITION
+                ↓
+NEW WATER TERRITORIES / EVIDENCE SOURCES
+                ↓
+AUTOMATED INVESTIGATION
+                ↓
+FIELD VALIDATION
+                ↓
+OPERATIONAL WATER INTELLIGENCE
+```
+
+## 7. The WTI Architecture
 
 ```
 TERRITORY
@@ -68,7 +105,7 @@ TRAJECTORY      HOTSPOT          DISCOVERY
 
 The architecture's job is to take a territory, in any water-relevant form — reservoir, river, coastline, bay, inland sea — and carry it through the same pipeline, producing a result that is both a *finding* and a *traceable evidence chain* at the same time.
 
-## 7. Five Experimental Demonstrations
+## 8. Five Experimental Demonstrations
 
 **Sobradinho Reservoir / São Francisco River — signal without a prior.** The transformation engine detected extreme retraction of the Sobradinho reservoir directly from AlphaEarth embeddings, with no water-specific mask involved — the strongest proof that WTI's core signal generalizes to water without being told what water is. Independent Sentinel-1/Sentinel-2 corroboration reached agreement on 80.5% of the highest-signal candidates, and historical imagery confirmed the retraction visually.
 
@@ -80,19 +117,19 @@ The architecture's job is to take a territory, in any water-relevant form — re
 
 **Aral Sea — water as trajectory.** Instead of a single before/after comparison, the Aral Sea was represented as a full sequence of territorial states and transitions across 2018–2024 — demonstrating that the architecture treats water loss as a process with structure, not a one-time snapshot.
 
-## 8. What These Demonstrations Have in Common
+## 9. What These Demonstrations Have in Common
 
 Every case runs the same four moves, on a different water system, at a different scale: **a transformation signal computed without a water-specific prior; corroboration against independent physical evidence; a path from signal to a specific, verifiable location; and a way of holding what is known separate from what is inferred.** A reservoir, a river hotspot, a mangrove coastline, a bay, and an inland sea are structurally different water systems — and the same pipeline produced evidence-backed findings on all five. That consistency, not any single case, is the real result.
 
-## 9. What Becomes Possible Through Composition
+## 10. What Becomes Possible Through Composition
 
 Individually, each case was a proof of one capability. Composed, they become something categorically different: an architecture that can be pointed at *any* water territory — known or unfamiliar, large or small, sudden or gradual — and produce the same kind of output every time: a located, corroborated, provenance-tracked claim, plus an explicit next investigative question. Composition is what turns five demonstrated capabilities into one deployable intelligence layer.
 
-## 10. Why This Matters for Water
+## 11. Why This Matters for Water
 
 Water systems are exactly the domain where territorial intelligence pays off most: they change on multiple time scales at once (sudden hotspots and slow multi-year trajectories), they cross conventional monitoring boundaries (a river doesn't respect a municipal border, a mangrove doesn't respect a classification scheme), and they are chronically under-instrumented relative to their importance. An architecture that can generalize a transformation signal across reservoirs, rivers, coastlines, bays, and inland seas — using the same underlying representation — is precisely the kind of infrastructure water intelligence has been missing.
 
-## 11. Impact and Application Pathways
+## 12. Impact and Application Pathways
 
 - **Environmental risk screening** — surfacing which territories deserve field attention before resources are committed.
 - **Water-risk intelligence** for ESG and industrial-adjacent due diligence, with an auditable evidence trail instead of a black-box score.
@@ -100,14 +137,14 @@ Water systems are exactly the domain where territorial intelligence pays off mos
 - **Infrastructure/environmental risk investigation**, using the hotspot-to-visual-verification pipeline already proven at Joanes.
 - **Analogous-regime discovery**, transferring knowledge from well-understood territories to under-monitored ones with similar behavioral signatures.
 
-## 12. Current Development Stage
+## 13. Current Development Stage
 
-The core capabilities — transformation detection, multi-sensor corroboration, visual verification, trajectory modeling, regime discovery — are each independently proven on real satellite data across five distinct water systems. The unified WTI state schema that composes them into one pipeline exists as a working proof-of-composition artifact, and five frozen observations now run through the offline adapter. The current stage is architectural consolidation: turning five validated capabilities running as related experiments into one system that runs the full chain automatically for any new territory.
+The core capabilities — transformation detection, multi-sensor corroboration, visual verification, trajectory modeling, regime discovery — are each independently proven on real satellite data across five distinct water systems, with additional transferable mechanisms demonstrated in adjacent territorial and environmental investigations. The unified WTI state schema that composes them into one pipeline exists as a working proof-of-composition artifact, and five frozen observations now run through the offline adapter. The current stage is architectural consolidation: turning a broader territorial-intelligence substrate into a water system that can run the full chain automatically for new territories.
 
-## 13. Next Development Step
+## 14. Next Development Step
 
 The next step is field-anchored validation: pairing the architecture with a real operational partner — an environmental audit, a municipal water authority, a conservation program — to close the loop between computational evidence and ground truth, and to harden the TraceFoundry layer into an automatic output rather than a manually constructed narrative.
 
-## 14. Closing Argument
+## 15. Closing Argument
 
 WTI is not a proposal to build water intelligence from scratch. It is the recognition that a territorial intelligence pattern — proven independently on a reservoir, a river, a mangrove coastline, a bay, and a collapsing sea — already exists, already generalizes, and is ready to be composed into a single architecture purpose-built for water. The technology is larger than any one artifact that formalizes it: it is a demonstrated capability to turn territory, anywhere, into evidence.

@@ -2,7 +2,7 @@
 
 > **Water Territorial Intelligence is an architecture for turning territorial change into traceable water intelligence: from general territorial representation, through transformation detection, localization and independent corroboration, to evidence, provenance and the next investigative action.**
 
-WTI is not presented as an already-deployed water-management system, water-quality classifier or hydrological forecasting service. It is a public, executable and evidence-preserving consolidation of capabilities previously demonstrated in real territorial experiments.
+The five frozen cases are **evidence anchors, not the boundary of the technology**. WTI composes a broader substrate already developed across semantic territorial representation, temporal analysis, anomaly and hotspot discovery, regime discovery, analogous-region retrieval, multimodal corroboration, coordinate-linked investigation, structured interpretation and adaptive evidence workflows.
 
 ## Run it first
 
@@ -38,6 +38,8 @@ NEXT INVESTIGATIVE ACTION
 STATE UPDATE ↺
 ```
 
+The technology horizon is larger than the offline fixture runner: existing territorial capabilities → WTI composition → new water territories and evidence sources → automated investigation → field validation → operational water intelligence. See [`docs/capability-horizon.md`](docs/capability-horizon.md).
+
 ## Five prior demonstrations
 
 - **Sobradinho / São Francisco:** transformation from general territorial representation without a water-specific mask; 29/36 candidates had at least one independent sensor agreement.
@@ -54,12 +56,12 @@ These are prior demonstrations underlying WTI, not five end-to-end field deploym
 - `cases/` — case-level explanations and canonical observation copies.
 - `schemas/` — minimal contracts for observations, investigation state and research moves.
 - `src/` — deterministic WTI adapter.
-- `docs/` — architecture, narrative, evidence register, epistemic discipline, lineage and roadmap.
+- `docs/` — architecture, narrative, capability horizon, evidence register, epistemic discipline, lineage and roadmap.
 - `submissions/gpiw-2026/` — GPIW application narrative and evidence map, kept separate from the technical core.
 
 ## Epistemic discipline
 
-WTI explicitly represents what evidence establishes, what it suggests, what remains unknown and what should be investigated next. A territorial signal is not automatically a water-level, water-quality, contamination or causal measurement. See [`docs/epistemic-discipline.md`](docs/epistemic-discipline.md).
+WTI explicitly represents what evidence establishes, what it suggests, what remains unknown and what should be investigated next. A territorial signal is not automatically a water-level, water-quality, contamination or causal measurement. WTI distinguishes **demonstrated capability**, **transferable capability**, **compositional/architectural capability** and **future validation**. See [`docs/epistemic-discipline.md`](docs/epistemic-discipline.md) and [`docs/capability-horizon.md`](docs/capability-horizon.md).
 
 ## What is not claimed
 

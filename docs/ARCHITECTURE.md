@@ -32,6 +32,8 @@ The water-specific proof is already present in the patrimony:
 
 The missing innovation is therefore **composition and water-specific operationalization**, not invention of a new foundation model.
 
+The five frozen WTI cases are evidence anchors, not the capability boundary. The broader corpus supports four distinct levels: **demonstrated capability** where an existing artifact directly shows the mechanism; **transferable capability** where the mechanism was demonstrated in another territorial or environmental context; **compositional/architectural capability** where WTI combines those mechanisms into a water-specific contract; and **future validation** where new field data, partners or deployment are still required. The public map is maintained in [`docs/capability-horizon.md`](capability-horizon.md).
+
 ---
 
 ## 2. Problem being attacked
@@ -251,6 +253,10 @@ This distinction materially improves the credibility of the GPIW object.
 The currently evidenced LuxSense implementation is a **Raman spectroscopy + ML industrial QC system**, with 3,510 spectra and 99.43% Random Forest accuracy on 702 test samples.
 
 It demonstrates a general sensor-to-model pattern, but it is not a water sensor and therefore is **not part of the core WTI water evidence chain**. It may be cited only as evidence of broader sensing/ML capability if useful.
+
+### 5.8 Capability horizon
+
+The corpus also contains cross-domain territorial intelligence beyond the five water anchors: industrial and mining candidate retrieval, environmental/ecological investigations, temporal onset and early-mover reading, clustering, analogous-region search, structured serializer output and agent-oriented interpretation. These mechanisms are not being relabeled as water deployments. They are the transferable substrate from which WTI's larger architecture is composed.
 
 ---
 
