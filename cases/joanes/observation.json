@@ -1,0 +1,58 @@
+{
+  "observation_id": "wti-joanes-001",
+  "location": {
+    "lat": -12.8176,
+    "lon": -38.3315,
+    "label": "Rio Joanes hotspot P03, Candeias, Bahia, Brazil",
+    "precision": "documented_hotspot_coordinate",
+    "study_area_center": {
+      "lat": -12.7878,
+      "lon": -38.3222,
+      "label": "Landulpho Alves refinery-centered analysis"
+    },
+    "study_area_radius_km": 5.0,
+    "river_coordinate": {
+      "lat": -12.8176,
+      "lon": -38.3315,
+      "label": "Rio Joanes coordinate documented in consolidated case data"
+    }
+  },
+  "time_window": [
+    "2019",
+    "2024"
+  ],
+  "signals": {
+    "tti_mean": null,
+    "tti_median": null,
+    "tti_p90": null,
+    "tti_p99": null,
+    "tti_max": null,
+    "sar_delta_db": 7.19,
+    "ndvi_delta": -0.741,
+    "viirs_delta": null,
+    "hotspot_score": 0.501
+  },
+  "corroboration": {
+    "status": "documented_in_source_artifact",
+    "sensors": [
+      "Sentinel-1 SAR",
+      "Sentinel-2 NDVI"
+    ],
+    "historical_visual_investigation": true,
+    "hotspot_id": "P03"
+  },
+  "coverage": {
+    "analysis_unit": "hotspot within refinery-centered 5 km analysis radius"
+  },
+  "water_context": "river",
+  "source": "viniburilux/ghostworks — consolidated_data.md and public case materials",
+  "source_artifact": "consolidated_data.md §Case 01; images/acelen-candeias-2019.png; images/acelen-candeias-2023.png",
+  "evidence_uri": "https://github.com/viniburilux/ghostworks",
+  "source_observed_at": "2026-05-29T19:14:18+00:00",
+  "epistemic_status": "observed",
+  "interpretation": "coordinate-linked physical alteration signal with historical visual investigation available",
+  "limitations": [
+    "The documented evidence does not establish pollution, contamination, industrial causality, legal violation, or liability.",
+    "Causal mechanism remains open."
+  ]
+}

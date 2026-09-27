@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "WTI — Water Territorial Intelligence"
+authors:
+  - family-names: Lux
+    given-names: "Vinicius Buri"
+    orcid: "https://orcid.org/0009-0000-6006-1516"
+version: 0.1.0
+date-released: 2026-09-27
+license: MIT
+repository-code: "https://github.com/viniburilux/water-territorial-intelligence"

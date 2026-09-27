@@ -1,0 +1,49 @@
+{
+  "observation_id": "wti-aral-sea-001",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "label": "Aral Sea, Central Asia",
+    "precision": "regional_trajectory_case"
+  },
+  "time_window": [
+    "2018",
+    "2024"
+  ],
+  "signals": {
+    "tti_mean": null,
+    "tti_median": null,
+    "tti_p90": null,
+    "tti_p99": null,
+    "tti_max": null,
+    "sar_delta_db": null,
+    "ndvi_delta": null,
+    "viirs_delta": null
+  },
+  "corroboration": {
+    "status": "documented_in_source_artifact",
+    "method": "trajectory/state-transition analysis"
+  },
+  "coverage": {
+    "analysis_unit": "territorial state trajectory"
+  },
+  "trajectory": {
+    "status": "documented",
+    "states": "documented",
+    "transitions": "documented",
+    "outliers": "documented",
+    "clusters": "documented",
+    "analogous_regions": "documented"
+  },
+  "water_context": "lake",
+  "source": "GhostWorks Atlas (summarized in WTI narrative and architecture)",
+  "source_artifact": "docs/NARRATIVE.md §Five Experimental Demonstrations; GhostWorks Atlas materials",
+  "evidence_uri": "https://github.com/viniburilux/ghostworks",
+  "source_observed_at": "2026-05-29T19:14:18+00:00",
+  "epistemic_status": "observed",
+  "interpretation": "water-relevant territorial change represented as a trajectory of states and transitions rather than a snapshot",
+  "limitations": [
+    "This fixture does not claim hydrological forecasting or causal attribution.",
+    "Raw state vectors and coordinates are not included in the recovered WTI package."
+  ]
+}

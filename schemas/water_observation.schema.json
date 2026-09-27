@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "water-territorial-intelligence/water-observation-v0.json",
+  "title": "WTI Water Territorial Intelligence Observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["observation_id", "location", "time_window", "signals", "water_context", "source", "epistemic_status"],
+  "properties": {
+    "observation_id": {"type": "string", "minLength": 1},
+    "location": {
+      "type": "object", "additionalProperties": false, "required": ["lat", "lon", "label", "precision"],
+      "properties": {
+        "lat": {"type": ["number", "null"], "minimum": -90, "maximum": 90},
+        "lon": {"type": ["number", "null"], "minimum": -180, "maximum": 180},
+        "label": {"type": ["string", "null"]},
+        "precision": {"type": "string"},
+        "aoi": {"type": "string"}, "scope": {"type": "string"}, "study_area_center": {"type": "object"},
+        "study_area_radius_km": {"type": "number", "minimum": 0}, "river_coordinate": {"type": "object"}, "territory_count": {"type": "integer", "minimum": 1}
+      }
+    },
+    "time_window": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string"}},
+    "signals": {
+      "type": "object", "additionalProperties": false,
+      "properties": {
+        "tti_mean": {"type": ["number", "null"]}, "tti_median": {"type": ["number", "null"]}, "tti_p90": {"type": ["number", "null"]}, "tti_p99": {"type": ["number", "null"]}, "tti_max": {"type": ["number", "null"]},
+        "sar_delta_db": {"type": ["number", "null"]}, "ndvi_delta": {"type": ["number", "null"]}, "viirs_delta": {"type": ["number", "null"]}, "hotspot_score": {"type": ["number", "null"]}
+      }
+    },
+    "corroboration": {"type": "object"}, "coverage": {"type": "object"}, "trajectory": {"type": "object"}, "regime_summary": {"type": "object"},
+    "water_context": {"enum": ["river", "lake", "reservoir", "coastal", "watershed", "unknown"]},
+    "source": {"type": "string", "minLength": 1}, "source_artifact": {"type": "string"}, "evidence_uri": {"type": ["string", "null"], "format": "uri"},
+    "source_observed_at": {"type": ["string", "null"], "format": "date-time"},
+    "epistemic_status": {"enum": ["observed", "inferred", "hypothesis", "insufficient", "blocked", "contradicted"]},
+    "interpretation": {"type": "string"}, "limitations": {"type": "array", "items": {"type": "string"}}
+  }
+}

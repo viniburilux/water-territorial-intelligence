@@ -1,0 +1,50 @@
+{
+  "observation_id": "wti-baia-todos-os-santos-001",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "label": "Baía de Todos os Santos, Bahia, Brazil",
+    "precision": "regional_case",
+    "territory_count": 8
+  },
+  "time_window": [
+    "2018",
+    "2024"
+  ],
+  "signals": {
+    "tti_mean": null,
+    "tti_median": null,
+    "tti_p90": null,
+    "tti_p99": null,
+    "tti_max": null,
+    "sar_delta_db": null,
+    "ndvi_delta": null,
+    "viirs_delta": null
+  },
+  "corroboration": {
+    "status": "documented_in_source_artifact",
+    "method": "STT territorial comparison",
+    "prioritization_visualization": true
+  },
+  "coverage": {
+    "embedding_count": 33600,
+    "embedding_dimensions": 64,
+    "territory_count": 8,
+    "analysis_unit": "territorial embedding comparison"
+  },
+  "regime_summary": {
+    "status": "documented",
+    "description": "relative territorial transformation comparison across eight bay territories"
+  },
+  "water_context": "coastal",
+  "source": "GhostWorks_BTS_v1 / Leitura_Territorial_BTS (summarized in WTI architecture)",
+  "source_artifact": "docs/ARCHITECTURE.md §5; WTI narrative §Five Experimental Demonstrations",
+  "evidence_uri": "https://github.com/viniburilux/ghostworks",
+  "source_observed_at": "2026-05-29T19:14:18+00:00",
+  "epistemic_status": "observed",
+  "interpretation": "regional territorial comparison and prioritization inside the analyzed environmental context",
+  "limitations": [
+    "STT represents territorial transformation in the analyzed context; it is not automatically hydrological degradation.",
+    "Bounding-box and prototype-geometry limitations remain documented."
+  ]
+}

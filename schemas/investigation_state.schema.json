@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WTI TraceFoundry Investigation State",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "investigation_id", "question", "status", "evidence", "claims", "gaps"],
+  "properties": {
+    "schema_version": {"type": "string"}, "investigation_id": {"type": "string"}, "question": {"type": "string"},
+    "status": {"enum": ["open", "in_review", "resolved", "closed"]},
+    "evidence": {"type": "array", "items": {"type": "object"}}, "claims": {"type": "array", "items": {"type": "object"}}, "gaps": {"type": "array", "items": {"type": "object"}},
+    "decision": {"type": ["string", "null"]}, "next_move_id": {"type": ["string", "null"]},
+    "source_observed_at": {"type": ["string", "null"], "format": "date-time"}, "generated_at": {"type": ["string", "null"], "format": "date-time"},
+    "warnings": {"type": "array", "items": {"type": "string"}}
+  }
+}

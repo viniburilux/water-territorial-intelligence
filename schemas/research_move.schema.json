@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WTI TraceFoundry Research Move",
+  "type": "object", "additionalProperties": false,
+  "required": ["schema_version", "move_id", "investigation_id", "title", "objective", "action_type", "action", "rationale", "evidence_ids", "gap_ids", "stop_criteria", "status"],
+  "properties": {
+    "schema_version": {"type": "string"}, "move_id": {"type": "string"}, "investigation_id": {"type": "string"}, "title": {"type": "string"}, "objective": {"type": "string"}, "action_type": {"type": "string"}, "action": {"type": "string"}, "rationale": {"type": "string"},
+    "evidence_ids": {"type": "array", "items": {"type": "string"}}, "gap_ids": {"type": "array", "items": {"type": "string"}}, "expected_observation": {"type": ["string", "null"]}, "stop_criteria": {"type": "array", "items": {"type": "string"}}, "status": {"enum": ["proposed", "accepted", "completed", "rejected", "blocked"]},
+    "source_observed_at": {"type": ["string", "null"], "format": "date-time"}, "generated_at": {"type": ["string", "null"], "format": "date-time"}, "provenance_note": {"type": ["string", "null"]}
+  }
+}

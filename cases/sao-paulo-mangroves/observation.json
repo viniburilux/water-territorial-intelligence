@@ -1,0 +1,65 @@
+{
+  "observation_id": "wti-sao-paulo-mangroves-001",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "label": "São Paulo mangrove coastline, Brazil",
+    "precision": "multi_municipality_regional_case",
+    "scope": "nine coastal municipalities documented in WTI narrative"
+  },
+  "time_window": [
+    "2018",
+    "2024"
+  ],
+  "signals": {
+    "tti_mean": null,
+    "tti_median": null,
+    "tti_p90": null,
+    "tti_p99": null,
+    "tti_max": null,
+    "sar_delta_db": null,
+    "ndvi_delta": null,
+    "viirs_delta": null
+  },
+  "corroboration": {
+    "status": "documented_in_source_artifact",
+    "sources": [
+      "Dynamic World",
+      "MapBiomas",
+      "Global Mangrove Watch",
+      "VIIRS",
+      "Sentinel-2"
+    ],
+    "auditlab_alert_count": 20,
+    "historical_epochs": 4
+  },
+  "coverage": {
+    "point_count": 4000,
+    "municipality_count": 9,
+    "analysis_unit": "multi-source territorial environmental dossier"
+  },
+  "trajectory": {
+    "status": "documented",
+    "description": "multi-year trajectories across ecological and environmental signals"
+  },
+  "regime_summary": {
+    "status": "documented",
+    "groups": [
+      "conserved",
+      "anthropized",
+      "rapidly-changing"
+    ]
+  },
+  "water_context": "coastal",
+  "source": "GhostWorks AuditLab + territorial dossier (summarized in WTI narrative)",
+  "source_artifact": "docs/NARRATIVE.md §Five Experimental Demonstrations; broader GhostWorks case materials",
+  "evidence_uri": "https://github.com/viniburilux/ghostworks",
+  "source_observed_at": "2026-05-29T19:14:18+00:00",
+  "epistemic_status": "observed",
+  "interpretation": "multi-source territorial environmental evidence across mangrove regimes",
+  "limitations": [
+    "No single coordinate fixture or raw point table is included in the recovered WTI package.",
+    "GMW = 0 ha at a point is not proof of mangrove absence.",
+    "Ecological indices are not ground truth of degradation."
+  ]
+}

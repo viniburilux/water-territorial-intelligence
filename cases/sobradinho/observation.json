@@ -1,0 +1,50 @@
+{
+  "observation_id": "wti-sobradinho-001",
+  "location": {
+    "lat": null,
+    "lon": null,
+    "label": "Remanso / Sobradinho Lake / São Francisco River, Bahia, Brazil",
+    "precision": "not_published_in_source_artifact",
+    "aoi": "30 km AOI around Remanso/BA documented in TTI_Summary.md"
+  },
+  "time_window": [
+    "2017",
+    "2024"
+  ],
+  "signals": {
+    "tti_mean": 0.1326,
+    "tti_median": 0.0679,
+    "tti_p90": 0.3697,
+    "tti_p99": 0.6358,
+    "tti_max": 0.6898,
+    "sar_delta_db": null,
+    "ndvi_delta": null,
+    "viirs_delta": null
+  },
+  "corroboration": {
+    "candidate_count": 36,
+    "confirmed_by_at_least_one_independent_sensor": 29,
+    "agreement_rate": 0.805,
+    "sensors": [
+      "Sentinel-1",
+      "Sentinel-2"
+    ],
+    "status": "documented_in_source_artifact"
+  },
+  "coverage": {
+    "embedding_dimensions": 64,
+    "analysis_unit": "territorial embedding / pixel-derived STT",
+    "water_mask_used": false
+  },
+  "water_context": "reservoir",
+  "source": "viniburilux/TTI_Brazil_2017_2024 — TTI_Summary.md and README.md",
+  "source_artifact": "TTI_Summary.md §5; README.md §Main findings",
+  "evidence_uri": "https://github.com/viniburilux/TTI_Brazil_2017_2024",
+  "source_observed_at": "2026-04-19T13:07:39.140685",
+  "epistemic_status": "observed",
+  "interpretation": "water-body retraction signal detected from general territorial representation without a dedicated water mask",
+  "limitations": [
+    "No published source coordinate for the 30 km AOI center in the recovered artifact.",
+    "Not a water level, flow, chemistry, contamination, or causal measurement."
+  ]
+}
