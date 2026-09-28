@@ -11,6 +11,7 @@
 ## v0.2 backlog
 
 - Recover raw/point-level artifacts for mangroves, BTS and Aral where redistribution is permitted.
+- Publish a redistributable extract of the GhostWorks-ESG case record behind the Rio Joanes SAR/NDVI values (primary-artifact traceability).
 - Add automated JSON Schema validation in CI.
 - Add a minimal visual case report for Rio Joanes.
 - Add contradiction handling and prioritization benchmarks.
