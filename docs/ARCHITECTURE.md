@@ -453,21 +453,18 @@ Do not claim TRL 6–7 solely from the legacy WaterLux narrative.
 
 ## 11. Relation to GPIW categories
 
-The historical GPIW material already in the patrimony distinguishes:
+Verified against the live 2026 call on 2026-09-28 (sources: the GPIW 2026 challenge listing on innocentive.com, the official platform gpiw.net, and the ennomotive challenge page; see `submissions/gpiw-2026/call-2026-verified.md`):
 
-- **Discovery Award:** TRL 1–3;
-- **Breakthrough Award:** TRL 4–7;
-- **Special Mentions / market-ready:** TRL 8–9.
+- **Tracks:** TRL 1-3 (Research and Proof of Concept); TRL 4-7 (Development and Demonstration); Special Mention for TRL 8-9 / market-ready submissions.
+- **Deadline:** 30 September 2026, 23:59 Arabian Standard Time (UTC+3).
+- **Required submission:** a written proposal, a short pitch deck (PDF or PPT) and a short pitch video (mp4, about 2 minutes, under 50 MB). Supporting documentation is optional.
+- **Evaluation framing:** fit within one prize category and the correct TRL track; innovation, technical merit and potential impact; a credible path toward piloting, scaling or deployment appropriate to the readiness level, with evidence expectations proportional to the declared TRL.
 
-The internal historical material also associates digitalization, automation and smart water management with the intended application space.
+Earlier editions used the names Discovery Award (TRL 1-3) and Breakthrough Award (TRL 4-7); internal material written with those names should be read through the 2026 track mapping above.
 
-For the current object, the honest positioning is:
+Given the maturity assessment in section 10 (composition at approximately TRL 3-4), the honest submission positioning is:
 
-> **Discovery / early Breakthrough boundary today, with a credible path into Breakthrough after the integrated demonstration is completed.**
-
-Because the current 2026 official form has not been re-verified in this inside-the-house pass, category wording should be checked against the live call before submission.
-
----
+> **TRL 1-3 / Research and Proof of Concept track**, at the upper end of that band, with a credible path into TRL 4-7 after automated upstream integration and field-anchored validation.
 
 ## 12. Submission gaps
 
