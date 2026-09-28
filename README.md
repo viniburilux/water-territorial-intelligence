@@ -16,7 +16,7 @@ WTI does not replace the territorial sensing systems that produced its observati
 | Transformation detection | TTI / STT | Detect and quantify territorial transformation without a water-specific mask | A |
 | Temporal reasoning | GhostWorks trajectories and annual deltas | Track change through time | A |
 | Spatial discovery | GhostWorks hotspots, clustering, regime discovery, analogous-region retrieval | Prioritize locations and transformation regimes | A |
-| Independent corroboration | Sentinel-1 SAR, Sentinel-2 NDVI, VIIRS, MapBiomas and related layers | Provide independent environmental signals | A |
+| Independent corroboration | Sentinel-1 SAR and Sentinel-2 NDVI (public executed corroboration); VIIRS and MapBiomas (internal mangrove dossier E-MAN-01) | Provide independent environmental signals | A |
 | Water-domain investigation | WTI (this repository) | Convert observations into water investigative states | A (frozen proof-of-composition) |
 | Evidence and provenance | TraceFoundry lineage | Preserve evidence, claims, gaps and provenance | A (contracts); D (automated upstream feed) |
 | Adaptive investigation | ASIE / investigation-machine lineage | Select the next investigative action from the current frontier | B; C in the water domain |
@@ -105,7 +105,7 @@ The upstream satellite and embedding pipelines are not duplicated inside this re
 ## Five prior demonstrations
 
 - **Sobradinho / São Francisco:** transformation from general territorial representation without a water-specific mask; 29/36 candidates had at least one independent sensor agreement.
-- **Rio Joanes:** hotspot P03 → coordinate → SAR/NDVI signal → historical visual investigation.
+- **Rio Joanes:** hotspot P03 (internal GhostWorks-ESG record) → coordinate and qualitative finding (public GhostWorks) → SAR/NDVI signal (internal record) → historical visual investigation.
 - **São Paulo mangroves:** multi-source ecosystem-scale temporal intelligence across approximately 4,000 points and nine coastal municipalities.
 - **Baía de Todos os Santos:** regional comparison across eight territories and 33,600 64-dimensional embeddings.
 - **Aral Sea:** water represented as states and transitions across a 2018–2024 trajectory.
