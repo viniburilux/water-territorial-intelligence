@@ -1,0 +1,2 @@
+# Development dependencies (test suite only; the demo runs on the standard library).
+jsonschema>=4.18
