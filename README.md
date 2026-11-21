@@ -1,5 +1,7 @@
 # WTI - Water Territorial Intelligence
 
+> **Public presentation page (pt-BR):** [viniburilux.github.io/water-territorial-intelligence](https://viniburilux.github.io/water-territorial-intelligence/), a guided reading of this repository for non-technical visitors.
+
 > **Water Territorial Intelligence is an architecture for turning territorial change into traceable water intelligence: from general territorial representation, through transformation detection, localization and independent corroboration, to evidence, provenance and the next investigative action.**
 
 The five frozen cases are **evidence anchors, not the boundary of the technology**. WTI composes a broader substrate already developed across semantic territorial representation, temporal analysis, anomaly and hotspot discovery, regime discovery, analogous-region retrieval, multimodal corroboration, coordinate-linked investigation, structured interpretation and adaptive evidence workflows.
