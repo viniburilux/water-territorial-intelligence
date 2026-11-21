@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WTI — Water Territorial Intelligence</title>
-<meta name="description" content="Uma arquitetura aberta que transforma mudanças do território, lidas por satélite, em investigações de água rastreáveis: lugar, evidência e próximo passo.">
+<meta name="description" content="O Water Territorial Intelligence conecta dados de satélite, inteligência artificial e evidências territoriais para ajudar organizações a compreender o que muda na água e no ambiente, identificar prioridades e orientar decisões.">
 <meta property="og:title" content="WTI — Water Territorial Intelligence">
-<meta property="og:description" content="Do sinal de satélite à investigação rastreável: cinco territórios de água, uma mesma máquina, evidência em cada etapa.">
+<meta property="og:description" content="Compreender o que muda nos territórios. Saber onde agir: satélite, IA e evidência territorial a serviço de melhores decisões sobre água e ambiente.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -239,6 +239,42 @@ footer a:hover{color:var(--aqua);text-decoration:none}
 .foot-desc{color:var(--ink-2);font-size:14px;max-width:38ch}
 .colophon{border-top:1px solid var(--line);padding-top:26px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:var(--ink-3);font-size:12.5px}
 
+/* transformacao */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:820px){.compare{grid-template-columns:1fr}}
+.cmp-col{border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px;background:var(--panel)}
+.cmp-col.before{background:transparent;border-style:dashed}
+.cmp-col.after{background:linear-gradient(160deg,var(--panel),var(--panel-2));border-color:rgba(79,209,197,.35)}
+.cmp-col h3{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;margin-bottom:18px}
+.cmp-col.before h3{color:var(--ink-3)}
+.cmp-col.after h3{color:var(--aqua)}
+.cmp-col ul{list-style:none;display:flex;flex-direction:column;gap:12px}
+.cmp-col li{position:relative;padding-left:24px;color:var(--ink-2);font-size:14.5px}
+.cmp-col.before li::before{content:"—";position:absolute;left:0;color:var(--ink-3)}
+.cmp-col.after li::before{content:"→";position:absolute;left:0;color:var(--aqua)}
+
+/* aplicacoes */
+.apps{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+@media(max-width:860px){.apps{grid-template-columns:1fr}}
+.app{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:10px}
+.app h3{font-family:'Fraunces',serif;font-weight:400;font-size:20px}
+.app .row{font-size:14px;color:var(--ink-2)}
+.app .row b{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);margin-bottom:3px;font-weight:600}
+.app .row.ben b{color:var(--aqua)}
+.pot{align-self:flex-start;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(245,192,106,.4);border-radius:999px;padding:4px 11px}
+
+/* ciclo */
+.cycle{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+@media(max-width:960px){.cycle{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:560px){.cycle{grid-template-columns:repeat(2,1fr)}}
+.cstep{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px 16px}
+.cstep span{display:block;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.1em;color:var(--aqua);margin-bottom:8px}
+.cstep p{color:var(--ink-2);font-size:13px}
+
+/* tres horizontes */
+.tiers3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:36px}
+@media(max-width:960px){.tiers3{grid-template-columns:1fr}}
+
 /* reveal */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
@@ -258,11 +294,11 @@ footer a:hover{color:var(--aqua);text-decoration:none}
       WTI <span style="color:var(--ink-3);font-weight:400">· Water Territorial Intelligence</span>
     </a>
     <div class="nav-links">
-      <a href="#problema">O problema</a>
+      <a href="#transformacao">O valor</a>
+      <a href="#aplicacoes">Aplicações</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#territorios">Territórios</a>
-      <a href="#evidencia">Evidência</a>
-      <a href="#horizonte">Horizonte</a>
+      <a href="#evidencia">Maturidade</a>
       <a class="nav-cta" href="https://github.com/viniburilux/water-territorial-intelligence" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
         GitHub
@@ -303,11 +339,11 @@ footer a:hover{color:var(--aqua);text-decoration:none}
     <div class="hero-grid">
       <div>
         <span class="eyebrow"><span class="dot"></span>LuxVerso Research Tech · pesquisa aberta</span>
-        <h1>O território muda. A água deixa rastros. Nós os transformamos em <em>investigação</em>.</h1>
+        <h1>Compreender o que muda nos territórios. <em>Saber onde agir.</em></h1>
         <p class="lede">
-          O Water Territorial Intelligence é uma arquitetura aberta que lê a mudança do território por satélite,
-          cruza sinais independentes e entrega o que um investigador precisa: um lugar, uma evidência e o próximo passo.
-          Tudo rastreável, do primeiro sinal à conclusão.
+          O Water Territorial Intelligence conecta dados de satélite, inteligência artificial e evidências territoriais
+          para ajudar instituições e organizações a compreender transformações que podem afetar a água e o ambiente,
+          identificar prioridades e orientar decisões.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#territorios">Conhecer os cinco territórios</a>
@@ -323,6 +359,102 @@ footer a:hover{color:var(--aqua);text-decoration:none}
     </div>
   </div>
 </header>
+
+<section id="transformacao">
+  <div class="wrap">
+    <p class="kicker reveal">O valor</p>
+    <h2 class="reveal">Da informação dispersa à <em>capacidade de agir</em></h2>
+    <p class="sub reveal">
+      O WTI não entrega mais um painel nem um alerta solto. Ele organiza o que o território está dizendo
+      para que uma equipe consiga compreender o problema, decidir onde olhar primeiro e acompanhar o que acontece depois.
+      A decisão continua humana: a tecnologia contribui com evidência, contexto e prioridade.
+    </p>
+    <div class="compare">
+      <div class="cmp-col before reveal">
+        <h3>Antes</h3>
+        <ul>
+          <li>Dados dispersos.</li>
+          <li>Observações isoladas.</li>
+          <li>Mudanças difíceis de acompanhar.</li>
+          <li>Pouca continuidade histórica.</li>
+          <li>Dificuldade de priorização.</li>
+        </ul>
+      </div>
+      <div class="cmp-col after reveal">
+        <h3>Com a contribuição do WTI</h3>
+        <ul>
+          <li>Mudanças identificadas e localizadas.</li>
+          <li>Evidências conectadas ao longo do tempo.</li>
+          <li>Contexto territorial organizado.</li>
+          <li>Lacunas explicitadas.</li>
+          <li>Áreas prioritárias para investigação e atenção.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aplicacoes">
+  <div class="wrap">
+    <p class="kicker reveal">Aplicações potenciais</p>
+    <h2 class="reveal">Quem pode usar, <em>e para quê</em></h2>
+    <p class="sub reveal">
+      Cada aplicação abaixo parte da dor de quem cuida do território. Nenhuma está validada operacionalmente ainda:
+      são aplicações potenciais, oferecidas como ponto de partida para construir junto.
+    </p>
+    <div class="apps">
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Gestão de recursos hídricos</h3>
+        <p class="row"><b>O problema</b>Alocação e proteção da água decididas com uma visão fragmentada do que está mudando.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Mudanças identificadas, localizadas e acompanhadas ao longo do tempo.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Decisões de manejo com evidência e prioridade claras.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Gestão de bacias hidrográficas</h3>
+        <p class="row"><b>O problema</b>Bacias extensas, monitoramento contínuo escasso e degradação percebida tarde demais.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>A região inteira na mesma régua, com trajetórias e hotspots comparáveis.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Distinguir onde a bacia está estável, em recuperação ou em degradação.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Empresas com ativos e operações territoriais</h3>
+        <p class="row"><b>O problema</b>Risco hídrico ao redor de ativos acompanhado por relatórios pontuais.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Trilha de evidência contínua, ancorada em coordenadas verificáveis.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Antecipar exposição e embasar a resposta antes do prejuízo.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Consultorias ESG</h3>
+        <p class="row"><b>O problema</b>Notas de risco ambiental de caixa-preta, difíceis de auditar.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Evidência rastreável, do sinal bruto à conclusão.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Análises que o cliente e o auditor conseguem conferir.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Projetos de conservação e restauração</h3>
+        <p class="row"><b>O problema</b>Recursos escassos e dificuldade de mostrar resultado ao longo do tempo.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Prioridades explícitas e acompanhamento da transformação do território.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Dirigir o esforço para onde ele mais conta e demonstrar o efeito.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Investidores de impacto</h3>
+        <p class="row"><b>O problema</b>Due diligence ambiental cara e pouco verificável.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Investigação estruturada, com proveniência e lacunas declaradas.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Alocar capital com confiança auditável.</p>
+      </div>
+      <div class="app reveal">
+        <span class="pot">Aplicação potencial</span>
+        <h3>Órgãos públicos</h3>
+        <p class="row"><b>O problema</b>Fiscalização e planejamento com território demais e equipe de menos.</p>
+        <p class="row"><b>Como o WTI pode contribuir</b>Uma fila de prioridades territoriais, com evidência por trás de cada item.</p>
+        <p class="row ben"><b>Benefício pretendido</b>Direcionar a ação limitada para onde o problema está.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section id="problema">
   <div class="wrap">
@@ -422,6 +554,26 @@ footer a:hover{color:var(--aqua);text-decoration:none}
   </div>
 </section>
 
+<section id="ciclo">
+  <div class="wrap">
+    <p class="kicker reveal">A ambição de evolução</p>
+    <h2 class="reveal">Um ciclo de <em>inteligência territorial</em></h2>
+    <p class="sub reveal">
+      A investigação é o mecanismo de hoje, não o destino. O objetivo de longo prazo é fechar um ciclo completo:
+      acompanhar a transformação dos territórios e também os resultados das ações realizadas sobre eles,
+      aprendendo a cada rodada.
+    </p>
+    <div class="cycle">
+      <div class="cstep reveal"><span>OBSERVAR</span><p>Ler o território continuamente, sem rótulos prévios.</p></div>
+      <div class="cstep reveal"><span>INTERPRETAR</span><p>Transformar sinais em evidência, trajetórias e contexto.</p></div>
+      <div class="cstep reveal"><span>PRIORIZAR</span><p>Apontar onde a atenção vale mais.</p></div>
+      <div class="cstep reveal"><span>INTERVIR</span><p>Apoiar a decisão de agir, com a escolha sempre humana.</p></div>
+      <div class="cstep reveal"><span>AVALIAR</span><p>Medir o efeito das ações realizadas.</p></div>
+      <div class="cstep reveal"><span>APRENDER</span><p>Realimentar o ciclo com a resposta do território.</p></div>
+    </div>
+  </div>
+</section>
+
 <section id="territorios">
   <div class="wrap">
     <p class="kicker reveal">Prova em território real</p>
@@ -496,53 +648,30 @@ footer a:hover{color:var(--aqua);text-decoration:none}
 
 <section id="evidencia">
   <div class="wrap">
-    <p class="kicker reveal">Disciplina de evidência</p>
-    <h2 class="reveal">Ambição alta, <em>régua honesta</em></h2>
+    <p class="kicker reveal">Maturidade</p>
+    <h2 class="reveal">Três horizontes, <em>uma régua honesta</em></h2>
     <p class="sub reveal">
-      Cada capacidade do WTI carrega o próprio nível de evidência. O projeto não se reduz à sua menor peça reproduzível,
-      mas também não apresenta como validado aquilo que ainda é arquitetura ou validação futura.
+      O projeto separa com clareza o que já foi demonstrado, o que está em desenvolvimento e o que é ambição de
+      longo prazo. Não se reduz à sua menor peça reproduzível, mas também não apresenta visão futura como
+      funcionalidade existente.
     </p>
-    <div class="tiers">
+    <div class="tiers3">
       <div class="tier t1 reveal">
-        <h3><span class="swatch"></span>Demonstrada</h3>
-        <p>Medida em artefatos existentes: detecção de transformação, trajetórias temporais, hotspots, corroboração SAR/NDVI, investigação visual por coordenada, contratos de evidência.</p>
+        <h3><span class="swatch"></span>Capacidades demonstradas</h3>
+        <p>Medidas em artefatos reproduzíveis: detecção de transformação, trajetórias temporais, hotspots, corroboração por sensores independentes, investigação visual por coordenada, contratos de evidência. É o que os cinco territórios mostram hoje.</p>
       </div>
       <div class="tier t2 reveal">
-        <h3><span class="swatch"></span>Transferível</h3>
-        <p>Mecanismos provados em investigações territoriais vizinhas, prontos para compor: recuperação de regiões análogas, descoberta de regimes, leitura temporal de início de mudança.</p>
-      </div>
-      <div class="tier t3 reveal">
-        <h3><span class="swatch"></span>Composicional</h3>
-        <p>A arquitetura WTI em si: a cadeia território → sinal → corroboração → evidência → próxima ação, hoje executável offline sobre cinco observações congeladas.</p>
+        <h3><span class="swatch"></span>Evoluções em desenvolvimento</h3>
+        <p>Mecanismos provados em investigações vizinhas, prontos para compor a cadeia completa WTI, hoje executável offline: recuperação de regiões análogas, descoberta de regimes, leitura temporal do início de mudança. Próximo passo: integração ao vivo com os fluxos de satélite e validação em campo.</p>
       </div>
       <div class="tier t4 reveal">
-        <h3><span class="swatch"></span>Validação futura</h3>
-        <p>Integração ao vivo com os fluxos de satélite, sensores em campo, parceiros operacionais. Declarado como caminho, nunca como fato.</p>
+        <h3><span class="swatch"></span>Ambição de longo prazo</h3>
+        <p>O ciclo completo de inteligência territorial, incluindo avaliar o resultado das ações realizadas, e a antecipação: assinaturas semânticas de desastres conhecidos orientando a busca dos mesmos padrões em lugares ainda não investigados. Declarado como caminho, nunca como fato.</p>
       </div>
     </div>
     <div class="noclaim reveal">
       <h3>O que este projeto não afirma</h3>
       <p>Nenhuma operação ao vivo de sensores IoT, química de águas subterrâneas, atribuição causal, validação de campo, usuários em produção ou previsão hidrológica. Um sinal territorial não é, por si só, medição de contaminação nem prova de degradação. A arquitetura existe exatamente para preservar essa distinção.</p>
-    </div>
-  </div>
-</section>
-
-<section id="horizonte">
-  <div class="wrap">
-    <p class="kicker reveal">Horizonte</p>
-    <h2 class="reveal">Para onde isso <em>pode ir</em></h2>
-    <p class="sub reveal">
-      Compostas, as capacidades deixam de ser cinco provas isoladas e viram uma camada de inteligência que pode ser apontada
-      para qualquer território de água, conhecido ou não, e devolver sempre o mesmo tipo de resultado: uma afirmação localizada,
-      corroborada, com proveniência e uma próxima pergunta investigativa.
-    </p>
-    <div class="horizon">
-      <div class="hitem reveal"><h3>Triagem de risco ambiental</h3><p>Quais territórios merecem atenção de campo antes que os recursos sejam comprometidos.</p></div>
-      <div class="hitem reveal"><h3>Risco hídrico para ESG e due diligence</h3><p>Uma trilha de evidência auditável no lugar de uma nota de caixa-preta.</p></div>
-      <div class="hitem reveal"><h3>Monitoramento de bacias e costas</h3><p>Distinguir regimes estáveis, em recuperação e em degradação, em escala.</p></div>
-      <div class="hitem reveal"><h3>Investigação de risco em infraestrutura</h3><p>O pipeline sinal → verificação visual já exercitado no Rio Joanes, aplicado a novos ativos.</p></div>
-      <div class="hitem reveal"><h3>Descoberta de regimes análogos</h3><p>Transferir conhecimento de territórios bem estudados para os menos monitorados, por assinatura de comportamento.</p></div>
-      <div class="hitem reveal"><h3>Antecipação</h3><p>Assinaturas semânticas de desastres ambientais conhecidos podem orientar a busca dos mesmos padrões em lugares ainda não investigados. Uma possibilidade da arquitetura, aberta para validação.</p></div>
     </div>
   </div>
 </section>
