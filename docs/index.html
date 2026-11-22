@@ -224,6 +224,9 @@ h2 em{font-style:italic;color:var(--aqua);font-weight:400}
   display:inline-block;margin:18px 0 26px;background:#04070e;border:1px solid var(--line-strong);
   border-radius:10px;padding:13px 20px;font-family:'JetBrains Mono',monospace;font-size:13.5px;color:var(--aqua);
 }
+.seek{list-style:none;margin:20px 0 10px;display:flex;flex-direction:column;gap:11px}
+.seek li{position:relative;padding-left:26px;color:var(--ink-2);font-size:15.5px;max-width:62ch}
+.seek li::before{content:"→";position:absolute;left:0;color:var(--aqua)}
 .next .invite{font-size:17px;color:var(--ink);font-family:'Fraunces',serif;font-style:italic;margin-top:8px}
 
 /* footer */
@@ -299,6 +302,7 @@ footer a:hover{color:var(--aqua);text-decoration:none}
       <a href="#como-funciona">Como funciona</a>
       <a href="#territorios">Territórios</a>
       <a href="#evidencia">Maturidade</a>
+      <a href="#parcerias">Parcerias</a>
       <a class="nav-cta" href="https://github.com/viniburilux/water-territorial-intelligence" target="_blank" rel="noopener">
         <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
         GitHub
@@ -342,12 +346,13 @@ footer a:hover{color:var(--aqua);text-decoration:none}
         <h1>Compreender o que muda nos territórios. <em>Saber onde agir.</em></h1>
         <p class="lede">
           O Water Territorial Intelligence conecta dados de satélite, inteligência artificial e evidências territoriais
-          para ajudar instituições e organizações a compreender transformações que podem afetar a água e o ambiente,
-          identificar prioridades e orientar decisões.
+          para ajudar instituições e organizações a compreender transformações que afetam a água e o ambiente,
+          identificar prioridades, orientar intervenções e acompanhar resultados. É o começo de uma infraestrutura
+          de inteligência territorial, construída em aberto.
         </p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#territorios">Conhecer os cinco territórios</a>
-          <a class="btn btn-ghost" href="https://github.com/viniburilux/water-territorial-intelligence" target="_blank" rel="noopener">Explorar o código</a>
+          <a class="btn btn-ghost" href="#parcerias">Conversar sobre um piloto</a>
         </div>
       </div>
       <div class="stats">
@@ -365,29 +370,30 @@ footer a:hover{color:var(--aqua);text-decoration:none}
     <p class="kicker reveal">O valor</p>
     <h2 class="reveal">Da informação dispersa à <em>capacidade de agir</em></h2>
     <p class="sub reveal">
-      O WTI não entrega mais um painel nem um alerta solto. Ele organiza o que o território está dizendo
-      para que uma equipe consiga compreender o problema, decidir onde olhar primeiro e acompanhar o que acontece depois.
-      A decisão continua humana: a tecnologia contribui com evidência, contexto e prioridade.
+      Pense em como uma organização acompanha um reservatório, uma bacia ou uma costa hoje: relatórios de épocas
+      diferentes, mapas que não conversam, medições pontuais e a memória de quem trabalha no campo. O WTI junta
+      essas peças. Ele mostra o que mudou, onde, desde quando, o que merece atenção primeiro e o que aconteceu
+      depois de cada ação. A decisão continua humana: a tecnologia contribui com evidência, contexto e prioridade.
     </p>
     <div class="compare">
       <div class="cmp-col before reveal">
         <h3>Antes</h3>
         <ul>
-          <li>Dados dispersos.</li>
-          <li>Observações isoladas.</li>
-          <li>Mudanças difíceis de acompanhar.</li>
-          <li>Pouca continuidade histórica.</li>
-          <li>Dificuldade de priorização.</li>
+          <li>Cada fonte conta uma parte: relatórios, planilhas e mapas que não se encaixam.</li>
+          <li>A mudança é percebida quando já virou problema.</li>
+          <li>O passado do território se perde entre arquivos e trocas de equipe.</li>
+          <li>Ninguém sabe dizer ao certo onde olhar primeiro.</li>
+          <li>Prioridade vira disputa de percepção, não de evidência.</li>
         </ul>
       </div>
       <div class="cmp-col after reveal">
         <h3>Com a contribuição do WTI</h3>
         <ul>
-          <li>Mudanças identificadas e localizadas.</li>
-          <li>Evidências conectadas ao longo do tempo.</li>
-          <li>Contexto territorial organizado.</li>
-          <li>Lacunas explicitadas.</li>
-          <li>Áreas prioritárias para investigação e atenção.</li>
+          <li>O que mudou aparece identificado e localizado, ponto a ponto.</li>
+          <li>Cada mudança vem com histórico: quando começou e como evoluiu.</li>
+          <li>O contexto do território reunido no mesmo lugar.</li>
+          <li>O que falta saber declarado, não escondido.</li>
+          <li>Uma fila clara de onde investigar e agir primeiro.</li>
         </ul>
       </div>
     </div>
@@ -406,51 +412,51 @@ footer a:hover{color:var(--aqua);text-decoration:none}
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Gestão de recursos hídricos</h3>
-        <p class="row"><b>O problema</b>Alocação e proteção da água decididas com uma visão fragmentada do que está mudando.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Mudanças identificadas, localizadas e acompanhadas ao longo do tempo.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Decisões de manejo com evidência e prioridade claras.</p>
+        <p class="row"><b>A situação</b>Um gestor precisa decidir onde restringir captação ou reforçar fiscalização no próximo semestre, cruzando medições pontuais, relatórios defasados e reclamações de usuários.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Ver onde a água está recuando, onde o entorno mudou e quais pontos pedem inspeção primeiro, com o histórico de cada local.</p>
+        <p class="row ben"><b>O valor prático</b>Decisões de manejo defendidas com evidência, não com percepção.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Gestão de bacias hidrográficas</h3>
-        <p class="row"><b>O problema</b>Bacias extensas, monitoramento contínuo escasso e degradação percebida tarde demais.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>A região inteira na mesma régua, com trajetórias e hotspots comparáveis.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Distinguir onde a bacia está estável, em recuperação ou em degradação.</p>
+        <p class="row"><b>A situação</b>Um comitê acompanha uma bacia extensa com equipe pequena, e a degradação costuma aparecer quando reverter já é caro.</p>
+        <p class="row"><b>O que o WTI permitiria</b>A bacia inteira na mesma régua: trechos estáveis, em recuperação ou em degradação, comparáveis entre si e ao longo do tempo.</p>
+        <p class="row ben"><b>O valor prático</b>Agir no trecho certo antes que o problema cresça.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Empresas com ativos e operações territoriais</h3>
-        <p class="row"><b>O problema</b>Risco hídrico ao redor de ativos acompanhado por relatórios pontuais.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Trilha de evidência contínua, ancorada em coordenadas verificáveis.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Antecipar exposição e embasar a resposta antes do prejuízo.</p>
+        <p class="row"><b>A situação</b>Uma empresa com plantações, minas ou plantas industriais descobre o risco ambiental ao redor de seus ativos por laudos pontuais, encomendados de tempos em tempos.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Acompanhar continuamente o entorno dos ativos, com trilha de evidência ancorada em coordenadas verificáveis.</p>
+        <p class="row ben"><b>O valor prático</b>Antecipar a exposição ao risco hídrico e embasar a resposta antes do prejuízo.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Consultorias ESG</h3>
-        <p class="row"><b>O problema</b>Notas de risco ambiental de caixa-preta, difíceis de auditar.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Evidência rastreável, do sinal bruto à conclusão.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Análises que o cliente e o auditor conseguem conferir.</p>
+        <p class="row"><b>A situação</b>Uma consultoria entrega análises de risco ambiental que o cliente não consegue auditar: conclusões de caixa-preta, sem rastro de como foram produzidas.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Cada conclusão acompanhada da cadeia de evidência, do sinal de satélite à afirmação final.</p>
+        <p class="row ben"><b>O valor prático</b>Análises que cliente, auditor e investidor conseguem conferir.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Projetos de conservação e restauração</h3>
-        <p class="row"><b>O problema</b>Recursos escassos e dificuldade de mostrar resultado ao longo do tempo.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Prioridades explícitas e acompanhamento da transformação do território.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Dirigir o esforço para onde ele mais conta e demonstrar o efeito.</p>
+        <p class="row"><b>A situação</b>Um projeto de restauração tem recursos limitados e precisa provar, anos depois, que a área recuperou de verdade.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Prioridades explícitas de onde intervir e um registro contínuo de como a área respondeu ao longo do tempo.</p>
+        <p class="row ben"><b>O valor prático</b>Dirigir o esforço para onde ele mais conta e demonstrar o efeito a financiadores.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Investidores de impacto</h3>
-        <p class="row"><b>O problema</b>Due diligence ambiental cara e pouco verificável.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Investigação estruturada, com proveniência e lacunas declaradas.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Alocar capital com confiança auditável.</p>
+        <p class="row"><b>A situação</b>Um fundo precisa verificar a tese ambiental de um ativo antes de investir, e a due diligence disponível é cara e difícil de conferir.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Uma investigação estruturada do território, com proveniência e lacunas declaradas.</p>
+        <p class="row ben"><b>O valor prático</b>Alocar capital com confiança auditável.</p>
       </div>
       <div class="app reveal">
         <span class="pot">Aplicação potencial</span>
         <h3>Órgãos públicos</h3>
-        <p class="row"><b>O problema</b>Fiscalização e planejamento com território demais e equipe de menos.</p>
-        <p class="row"><b>Como o WTI pode contribuir</b>Uma fila de prioridades territoriais, com evidência por trás de cada item.</p>
-        <p class="row ben"><b>Benefício pretendido</b>Direcionar a ação limitada para onde o problema está.</p>
+        <p class="row"><b>A situação</b>Um órgão ambiental tem território demais para fiscalizar, equipe de menos e escolhe destinos quase no escuro.</p>
+        <p class="row"><b>O que o WTI permitiria</b>Uma fila de prioridades territoriais, com a evidência por trás de cada item.</p>
+        <p class="row ben"><b>O valor prático</b>Direcionar a fiscalização limitada para onde o problema está.</p>
       </div>
     </div>
   </div>
@@ -691,10 +697,38 @@ footer a:hover{color:var(--aqua);text-decoration:none}
         e validação ancorada em campo, junto a um parceiro operacional, como uma auditoria ambiental,
         um órgão gestor de águas ou um programa de conservação.
       </p>
-      <p class="invite">Se você trabalha com água, território ou auditoria ambiental, este repositório é um convite.</p>
+      <p class="invite">Quem vive um problema territorial de perto é o parceiro que falta para a próxima etapa.</p>
       <div class="cta-row" style="margin-top:28px;margin-bottom:0">
         <a class="btn btn-primary" href="https://github.com/viniburilux/water-territorial-intelligence" target="_blank" rel="noopener">Abrir o repositório</a>
         <a class="btn btn-ghost" href="https://www.linkedin.com/in/vinicius-buri-46597792" target="_blank" rel="noopener">Falar com o autor</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="parcerias">
+  <div class="wrap">
+    <div class="next reveal">
+      <p class="kicker">Parcerias e pilotos</p>
+      <h2>Vamos testar o WTI no <em>seu problema territorial</em></h2>
+      <p>
+        O WTI já demonstra, em território real, o que sua arquitetura é capaz de fazer. O próximo passo é colocar
+        essa capacidade para trabalhar junto de quem convive com o problema. Buscamos organizações e parceiros
+        interessados em:
+      </p>
+      <ul class="seek">
+        <li>Testar o WTI em problemas territoriais reais.</li>
+        <li>Explorar aplicações em gestão de água e risco ambiental.</li>
+        <li>Desenvolver pilotos e validações operacionais.</li>
+        <li>Conectar a tecnologia a desafios concretos de ESG, conservação e gestão territorial.</li>
+      </ul>
+      <p>
+        Se a sua organização acompanha água, território ou risco ambiental, há uma conversa valiosa aqui:
+        um piloto bem escolhido é o caminho mais curto para validar essa capacidade na sua realidade.
+      </p>
+      <div class="cta-row" style="margin-top:28px;margin-bottom:0">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/vinicius-buri-46597792" target="_blank" rel="noopener">Conversar sobre um piloto</a>
+        <a class="btn btn-ghost" href="https://github.com/viniburilux/water-territorial-intelligence" target="_blank" rel="noopener">Explorar o repositório</a>
       </div>
     </div>
   </div>
